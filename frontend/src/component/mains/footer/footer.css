@@ -1,0 +1,39 @@
+/* footer.css */
+.footer {
+    position: fixed; /* Change from absolute to fixed */
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #F5F5F5; /*#f0f0f0;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+    .footer-links {
+        position: fixed; /* Change from absolute to fixed */
+        bottom: 0;
+        right: 85px;
+        padding: 7px;
+    }
+
+    .footer-links a {
+        margin: 0 10px; /* Adjust margin between links */
+        color: #333; /* Link color */
+        text-decoration: none; /* Remove underline */
+        font-size: 12px; /* Adjust font size */
+        font-weight: bold;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline; /* Underline on hover */
+        color: red;
+    }
+
+    /* Style for copyright notice */
+    .footer .copyRight {
+        position: fixed; /* Change from absolute to fixed */
+        bottom: 0;
+        right: 10px;
+        padding: 7px;
+        color: #333; /* Adjust color as needed */
+        font-size: 12px; /* Adjust font size as needed */
+    }

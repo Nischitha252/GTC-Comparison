@@ -1,0 +1,162 @@
+.browseBox {
+  position: relative;
+  width: 20vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-right: 50px;
+}
+.comBLabelHeading {
+  /* width: 200px; */
+  text-align: left;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.browseFile {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 4px dashed red;
+  border-radius: 10px;
+}
+
+.abbIcon {
+  margin-top: 4%;
+  color: red;
+}
+
+.abbIcon.disabled {
+  color: gray;
+}
+
+.browseFile span {
+  margin-top: 4%;
+  color: gray;
+}
+
+.browseFile.disabled {
+  border: 4px dashed gray;
+  cursor: not-allowed;
+}
+
+.cont {
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background-color: #f9f9f9;
+  max-width: 80%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.selectedFileNameP {
+  width: 15vw;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px -1px rgba(86, 85, 85, 0.1),
+    0 2px 4px -2px rgba(16, 16, 16, 0.1);
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.sendIcons {
+  position: absolute;
+  top: -38px;
+  right: 0px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #333;
+}
+
+.selectLayoutEx-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom style for drop down*/
+.p-multiselect .p-multiselect-chip {
+  background-color: #b0bec5;
+  color: #000000;
+  border-radius: 16px;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.p-multiselect-panel {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p-multiselect {
+  border: 1px solid #b0bec5;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.p-multiselect:focus,
+.p-multiselect:focus-visible,
+.p-multiselect:focus-within {
+  border-color: #b0bec5 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.p-multiselect .p-multiselect-label {
+  color: #9e9e9e;
+}
+
+.p-multiselect-item {
+  color: #000000;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.p-multiselect-item:hover {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+.p-multiselect-item.p-highlight {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.shimmer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite,
+    pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.shimmer-container {
+  width: 200px;
+  height: 60px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}

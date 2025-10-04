@@ -1,0 +1,33 @@
+.welcomeText {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.redLine {
+  margin-left: 0;
+  width: 50px;
+  height: 5px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.welcomeText p {
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: justify;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.welcomeText h3 {
+  width: 100%;
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.welcomeText h2 {
+  margin-bottom: 20px;
+}

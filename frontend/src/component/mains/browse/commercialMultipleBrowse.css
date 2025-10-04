@@ -1,0 +1,176 @@
+/* browse.css */
+.browseBox {
+  position: relative;
+  width: 15vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.comMBLabelHeading {
+  /* width: 200px; */
+  text-align: left;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.browseFile {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 4px dashed red;
+  border-radius: 10px;
+}
+
+.abbIcon {
+  margin-top: 4%;
+  color: red;
+}
+
+.abbIcon.disabled {
+  color: gray;
+}
+
+.browseFile span {
+  margin-top: 4%;
+  color: gray;
+}
+
+.browseFile.disabled {
+  border: 4px dashed gray;
+  cursor: not-allowed;
+}
+
+.mfSelectedFileName {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.cont {
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 0px;
+  background-color: #f9f9f9;
+  width: 200px;
+  margin-left: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(86, 85, 85, 0.1),
+    0 2px 4px -2px rgba(16, 16, 16, 0.1);
+  padding-left: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mfSelectedFileNameSpan {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  font-weight: 600;
+}
+
+.sendIcon {
+  position: absolute;
+  top: -38px;
+  right: 0px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #333;
+}
+
+@media only screen and (max-width: 850px) {
+  .cont {
+    max-width: 100%;
+    text-wrap: wrap;
+  }
+}
+
+.selectLayoutEx-cols {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.selectEx-cols {
+  width: 100%;
+  max-width: 18rem;
+  height: 2rem;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+@media (max-width: 1200px) {
+  .selectLayoutEx-cols {
+    width: 20vw;
+  }
+
+  .selectEx-cols {
+    max-width: 16rem;
+  }
+}
+.p-multiselect {
+  margin-left: 10px;
+}
+
+/* Custom style for drop down*/
+.p-multiselect .p-multiselect-chip {
+  background-color: #b0bec5;
+  color: #000000;
+  border-radius: 16px;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.p-multiselect-panel {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p-multiselect {
+  border: 1px solid #b0bec5;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.p-multiselect:focus,
+.p-multiselect:focus-visible,
+.p-multiselect:focus-within {
+  border-color: #b0bec5 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.p-multiselect .p-multiselect-label {
+  color: #9e9e9e;
+}
+
+.p-multiselect-item {
+  color: #000000;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.p-multiselect-item:hover {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+
+.p-multiselect-item.p-highlight {
+  background-color: grey;
+  color: #ffffff;
+}

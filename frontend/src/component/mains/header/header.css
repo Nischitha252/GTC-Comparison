@@ -1,0 +1,63 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.logo-cnt {
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+.logoImage {
+  width: 84px;
+  height: 40px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.divider {
+  border-right: 2px solid gray;
+  margin-right: 8px;
+  height: 40px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  justify-content: center;
+}
+
+@media (min-width: 1025px) {
+  /* Hide the toggle button on larger screens */
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  /* Toggle button styles */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .menu-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+}

@@ -1,0 +1,41 @@
+/* loader.css */
+.loaderBox {
+    position: relative;
+    top: 5vh;
+    /* width: 40vw;   */
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+    .bouncingLoader {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .bouncingLoader > div {
+        width: 16px;
+        height: 16px;
+        background-color: #007bff;
+        border-radius: 50%;
+        animation: bouncing 0.6s infinite alternate;
+    }
+
+    .bouncingLoader > div:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .bouncingLoader > div:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    @keyframes bouncing {
+        to {
+            transform: translateY(-100%);
+        }
+    }

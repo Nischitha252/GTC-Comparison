@@ -1,0 +1,30 @@
+.notification {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 82px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification-header {
+  height: 4px;
+  background-color: #21a67a; /* Green top border */
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.message {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}

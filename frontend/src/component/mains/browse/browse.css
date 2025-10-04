@@ -1,0 +1,80 @@
+/* browse.css */
+.browseBox {
+  width: 15vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  /* border: 1px solid red;     */
+}
+
+.browseFile {
+  /* width: 15vw; */
+  /* height: 85px; */
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 4px dashed red;
+  border-radius: 10px;
+}
+
+.abbIcon {
+  margin-top: 4%;
+  color: red;
+}
+
+.abbIcon.disabled {
+  color: gray;
+}
+
+.browseFile span {
+  margin-top: 4%;
+  color: gray;
+}
+
+.browseFile.disabled {
+  border: 4px dashed gray;
+  cursor: not-allowed;
+}
+
+.selectedFileName {
+  position: absolute;
+  width: 15vw;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid gray; */
+  padding: 20px 0px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px -1px rgba(86, 85, 85, 0.1),
+    0 2px 4px -2px rgba(16, 16, 16, 0.1);
+  font-weight: 600;
+}
+
+/* .uploadButton {
+    
+        top: 39px;
+        right: 10%;
+        background-color: #0000003D; 
+        color: #fff; 
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 30px;
+        cursor: pointer;
+    }
+
+        .uploadButton.enabled{
+            background-color: red; 
+        }
+
+        .hidden {
+            display: none;
+        } */

@@ -1,0 +1,18 @@
+{
+    "links": [
+    { "href": "/contact", "index": 0 },
+    { "href": "/terms", "index": 1 }
+],
+"files": [
+    { 
+        "filePath": "1682209 1 1.pdf", 
+        "fileName": "1682209 1 1.pdf", 
+        "mimeType": "application/pdf" 
+    },
+    { 
+        "filePath": "test2.pdf", 
+        "fileName": "test2.pdf", 
+        "mimeType": "application/pdf" 
+    }
+]
+}
